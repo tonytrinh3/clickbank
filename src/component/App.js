@@ -15,9 +15,9 @@ function App() {
     <div>
      <Header/>
      <NavBar/>
-     <body>
+     <div>
         <Slideshow/>
-
+     
         <div>
           <div>
             <SideBar/>
@@ -29,7 +29,7 @@ function App() {
 
         </div>
 
-     </body>
+     </div>
     
       <Footer/>
 

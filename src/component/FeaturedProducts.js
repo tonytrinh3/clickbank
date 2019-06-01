@@ -1,9 +1,13 @@
 import React from 'react';
+import data from '../data/data';
+import "./FeaturedProducts.css";
 
 function FeaturedProducts(){
     return(
         <div>
-            Featured Products
+            <h1> Featured Products</h1>
+            <br/>
+            <img src = {data[0].img.src} alt= "shit"/>
         </div>
     )
 };

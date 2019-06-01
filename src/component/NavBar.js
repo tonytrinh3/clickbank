@@ -19,18 +19,11 @@ function NavBar(){
   
     return (
       <div className = "Nav-Bar">
-        <Button
-          aria-owns={anchorEl ? 'simple-menu' : undefined}
-          aria-haspopup="true"
-          onClick={handleClick}
-        >
-          Open Menu
-        </Button>
-        <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My account</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
-        </Menu>
+        <img src = "https://www.clickbank.com/wp-content/uploads/2017/11/ClickBank_Logo_WEB-7.png" alt="logo"/>
+        <div className = 'item'>
+            <h3>Affiliate MarketPlace</h3>
+        </div>
+
       </div>
     );
   }
