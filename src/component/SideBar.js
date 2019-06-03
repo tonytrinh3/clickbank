@@ -1,27 +1,28 @@
 import React from 'react';
 import './SideBar.css';
+import Search from './Search';
 
-function SideBar(){
+class SideBar extends React.Component{  
+    render(){
+        return(
+            <div>
+                <header className = 'side-bar-header'>Side Bar</header>
+    
+                <nav className = 'side-bar'>
+                        <a className = "collapsible">Art & Entertainment</a>
+                            <a className = "content">Art</a>
+                            <a className = "content">Body Art</a>
+                        <a className = "collapsible">Business/Investing</a>
+                        <a className = "collapsible">Computers/Internet</a>
+                        <a className = "collapsible">E-Business & E-Marketing</a>
+                        <a className = "collapsible">Education</a>
+                </nav>
+            <Search/>
+            </div>
+        )
 
-        
+    }
 
-
-    return(
-        <div>
-            <header className = 'side-bar-header'>Side Bar</header>
-
-            <nav className = 'side-bar'>
-                    <a className = "collapsible">Art & Entertainment</a>
-                        <a className = "content">Art</a>
-                        <a className = "content">Body Art</a>
-                    <a className = "collapsible">Business/Investing</a>
-                    <a className = "collapsible">Computers/Internet</a>
-                    <a className = "collapsible">E-Business & E-Marketing</a>
-                    <a className = "collapsible">Education</a>
-            </nav>
-
-        </div>
-    )
 };
 
 export default SideBar;
