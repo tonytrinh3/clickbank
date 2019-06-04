@@ -1,6 +1,6 @@
 
 
-const data = [
+const productsData = [
     {
         "id": 1,
         "img": {
@@ -107,4 +107,4 @@ const data = [
 
 ];
 
-export default data; 
+export default productsData; 

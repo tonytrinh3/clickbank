@@ -1,23 +1,49 @@
 import React from 'react';
 import './SideBar.css';
-import Search from './Search';
+import categoriesData from '../data/categoriesData';
+
 
 class SideBar extends React.Component{  
+
+    state = { hideResults: true };
+
+    handleClick= () =>{
+        if (this.state.hideResults){
+          this.setState({ hideResults: false });
+        }
+        else{
+          this.setState({ hideResults: true });
+        }
+      
+    }
+
+
+    
+
     render(){
+
+        function Results(){
+            const subCategories = categoriesData.map((category)=>{
+                return category.Sub_Category[1]
+            })
+            
+            return subCategories
+          };
+
         return(
             <div>
-                <header className = 'side-bar-header'>Side Bar</header>
+                <header className = 'side-bar-header'>Categories</header>
     
                 <nav className = 'side-bar'>
-                        <a className = "collapsible">Art & Entertainment</a>
-                            <a className = "content">Art</a>
-                            <a className = "content">Body Art</a>
-                        <a className = "collapsible">Business/Investing</a>
-                        <a className = "collapsible">Computers/Internet</a>
-                        <a className = "collapsible">E-Business & E-Marketing</a>
-                        <a className = "collapsible">Education</a>
+                        <a onClick={this.handleClick}>Art & Entertainment</a>
+                        { !this.state.hideResults && <Results/> }
+                          
+                        <a>Business/Investing</a>
+                        <a>Computers/Internet</a>
+                        <a>E-Business & E-Marketing</a>
+                        <a>Education</a>
                 </nav>
-            <Search/>
+         
             </div>
         )
 
@@ -25,7 +51,13 @@ class SideBar extends React.Component{
 
 };
 
+
+
 export default SideBar;
+
+const subCategories = categoriesData.map((category)=>{
+    return category.Sub_Category
+})
 
 {/* <a>Employment & Jobs</a>
 <a>Fiction</a>
