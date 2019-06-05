@@ -7,13 +7,13 @@ function NavBar(){
   
   
     return (
-      <div className = "Nav-Bar">
+      <div className = "nav-bar">
         <img src = "https://www.clickbank.com/wp-content/uploads/2017/11/ClickBank_Logo_WEB-7.png" alt="logo"/>
-        <div className = 'item'>
-            <h3>Affiliate MarketPlace</h3>
-            <h3>Support</h3>
-            <h3>Create Account</h3>
-            <h3>Login</h3>
+        <div className = 'nav-bar-button-group'>
+            <a className = 'nav-bar-button'>Affiliate MarketPlace</a>
+            <a className = 'nav-bar-button'>Support</a>
+            <a className = 'nav-bar-button'>Create Account</a>
+            <a className = 'nav-bar-button'>Login</a>
         </div>
 
       </div>

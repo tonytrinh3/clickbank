@@ -1,18 +1,18 @@
-.Nav-Bar {
+.nav-bar {
     background-color: #ffffff;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
  
 
 }
 
-.Nav-Bar img{
+.nav-bar img{
     width: 20%; 
     height: 100%;
     margin: 10px;
  
 }
 
-.item{
+.nav-bar-button-group{
     display: inline-block; /*you need this to make the text within the div to be on the same line */
     position: absolute; /*this made my text in the middle of the bar */
     margin: auto;
@@ -20,7 +20,7 @@
     
 }
 
-h3 {
+.nav-bar-button {
     font-size: 13px;
     font-weight: 300;
     line-height: 14px;

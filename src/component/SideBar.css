@@ -22,13 +22,15 @@ header{
     line-height: 24px;
 }
 
-a {
+
+
+.content{
+    padding: 0px 10px;
+}
+
+.side-bar-link{
     border-bottom: 1px #818181 solid ;
     display: block;
     padding: 0 10px;
     cursor: pointer;
-}
-
-.content{
-    padding: 0px 10px;
 }

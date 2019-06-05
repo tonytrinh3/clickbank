@@ -12,26 +12,28 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div>
-     <Header/>
-     <NavBar/>
-     <div>
-        <Slideshow/>
-     
-        <div>
-          <div>
+    <div className = "main-body-container">
+      <div className ="main-body-header">
+        <Header/>
+      </div>
+      <div className ="main-body-navbar">
+        <NavBar />
+      </div>
+     <div className = 'main-body-slideshow'>
+      <Slideshow />
+     </div>
+      
+        
+          <div className = "main-page-side-bar">
             <SideBar/>
           </div>
-          
-          <div>
+          <div className = "main-page-feature-products">
             <FeaturedProducts/>
           </div>
-
-        </div>
-
-     </div>
+        
+      
     
-      <Footer/>
+    <Footer/>
 
         
 

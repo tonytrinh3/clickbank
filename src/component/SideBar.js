@@ -23,11 +23,25 @@ class SideBar extends React.Component{
     render(){
 
         function Results(){
-            const subCategories = categoriesData.map((category)=>{
-                return category.Sub_Category[1]
-            })
+            // const subCategories = categoriesData.map((category)=>{
+            //     return category.Sub_Category[1]
+            // })
             
-            return subCategories
+            // return subCategories
+            return(
+                <div className = "content">
+                    <a className = 'side-bar-link'>Art</a>
+                    <a className = 'side-bar-link'>Body Art</a>
+                    <a className = 'side-bar-link'>Dance</a>
+                    <a className = 'side-bar-link'>Fashion</a>
+                    <a className = 'side-bar-link'>Film & Televsion</a>
+                    <a className = 'side-bar-link'>General</a>
+                    <a className = 'side-bar-link'>Magic Tricks</a>
+                    <a className = 'side-bar-link'>Music</a>
+                    <a className = 'side-bar-link'>Photography</a>
+                    <a className = 'side-bar-link'>Radio</a>
+                </div>
+            )
           };
 
         return(
@@ -35,13 +49,13 @@ class SideBar extends React.Component{
                 <header className = 'side-bar-header'>Categories</header>
     
                 <nav className = 'side-bar'>
-                        <a onClick={this.handleClick}>Art & Entertainment</a>
+                        <a className = 'side-bar-link' onClick={this.handleClick}>Art & Entertainment</a>
                         { !this.state.hideResults && <Results/> }
                           
-                        <a>Business/Investing</a>
-                        <a>Computers/Internet</a>
-                        <a>E-Business & E-Marketing</a>
-                        <a>Education</a>
+                        <a className = 'side-bar-link'>Business/Investing</a>
+                        <a className = 'side-bar-link'>Computers/Internet</a>
+                        <a className = 'side-bar-link'>E-Business & E-Marketing</a>
+                        <a className = 'side-bar-link'>Education</a>
                 </nav>
          
             </div>
