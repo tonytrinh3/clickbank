@@ -1,0 +1,20 @@
+html{
+    /* apparently your root font size to be a pixel is bad bc if someone increase the size of the
+    font-size in browser, it will just be fixed at 10 pixel?
+    the pixel just overrides what user can change
+    10/16 = 62.5% bc 100% is 16 but you really just want 10 */
+    /* font-size: 10px; */
+  
+    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    /* 10 px is the root font size in order to use rem/em easily bc multiple of 10 - 1 rem = 10 px */
+  
+  }
+
+
+body{
+
+    /* border box allows padding and borders to canabalize within the true width/height of the div
+    in order to preserve the true width and height sizing that you want to be  */
+    box-sizing: border-box;
+    //padding: 3rem;
+  }

@@ -1,12 +1,12 @@
 import React from 'react';
 import productsData from '../data/productsData';
-import "./FeaturedProducts.css";
+import "./css/FeaturedProducts.css";
 
 function FeaturedProducts(){
     const images = productsData.map((image) =>{
         return  (
             <div className = 'product-image'>
-                <a><img src = {image.img.src} alt= "shit"/></a>
+                <a><img className = 'product-image__img' src = {image.img.src} alt= "product images"/></a>
             </div>
         )
     })

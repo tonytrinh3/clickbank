@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './sass/App.scss';
 
 
 import Header from './Header';
@@ -12,7 +12,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div className = "main-body-container">
+    <div className = "main-page-container">
       <div className ="main-body-header">
         <Header/>
       </div>
