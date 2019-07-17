@@ -10,7 +10,7 @@ import FeaturedProducts from './FeaturedProducts';
 import Footer from './Footer';
 
 
-function App() {
+function App() { //hi
   return (
     <div className = "main-page-container">
       <div className ="main-body-header">
