@@ -30,9 +30,11 @@ body{
 .container{
     display: grid;
     grid-template-columns: 
-        [left-side-start] minmax(6rem, 1fr) [left-side-end center-start]
-        repeat(8, [col-start] minxmax(min-content, 14rem) [col-end])
-        [center-end right-side-start] minmax(6rem, 1fr) [right-side-end];
+        [left-side-start full-start] minmax(6rem, 1fr) [left-side-end center-start]
+        //repeat(8, [col-start] minxmax(min-content, 1fr) [col-end])
+        repeat(8, [col-start] 1fr [col-end])
+        [center-end right-side-start] minmax(6rem, 1fr) [right-side-end full-end];
+    //grid-template-columns: repeat(8, 1fr);
     grid-template-rows: min-content min-content min-content min-content min-content min-content;
-    background-color: $color-pargraph;
+    background-color: $color-body-background;
 }

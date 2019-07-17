@@ -1,11 +1,15 @@
 @import './abstracts/variables.scss';
 
+@import './base/animations.scss';
 @import './base/base.scss';
+@import './base/typography.scss';
+@import './base/utilities.scss';
 
 @import './layout/footer.scss';
 @import './layout/header.scss';
 @import './layout/navigation.scss';
 @import './layout/sidebar.scss';
+@import './layout/slideshow.scss';
 
 
 /* body{

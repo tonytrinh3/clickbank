@@ -1,0 +1,29 @@
+.navigation {
+    background-color: $color-white;
+    grid-column: full-start/full-end;
+}
+
+.nav-bar-img{
+    width: 20%; 
+    height: 100%;
+    margin: 10px;
+ 
+}
+
+.nav-bar-button-group{
+    display: inline-block; /*you need this to make the text within the div to be on the same line */
+    position: absolute; /*this made my text in the middle of the bar */
+    margin: auto;
+    text-align: right;
+    
+}
+
+.nav-bar-button {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 14px;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0px 0px;
+  
+}

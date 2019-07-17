@@ -1,13 +1,12 @@
 import React from 'react';
+import './sass/main.scss';
 
-
-import './css/NavBar.css';
 
 function Navigation(){
   
   
     return (
-      <div className = "nav-bar">
+      <div className = "navigation">
         <img className = 'nav-bar-img' src = "https://www.clickbank.com/wp-content/uploads/2017/11/ClickBank_Logo_WEB-7.png" alt="logo"/>
         <div className = 'nav-bar-button-group'>
             <a className = 'nav-bar-button'>Affiliate MarketPlace</a>

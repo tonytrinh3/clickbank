@@ -1,8 +1,9 @@
 import React from 'react';
+import './sass/main.scss';
 
 function Slideshow(){
     return(
-        <div>
+        <div className = "slideshow">
             Slideshow
         </div>
     )
