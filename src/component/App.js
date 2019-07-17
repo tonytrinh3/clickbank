@@ -3,7 +3,7 @@ import './sass/App.scss';
 
 
 import Header from './Header';
-import NavBar from './NavBar';
+import Navigation from './Navigation';
 import Slideshow from './Slideshow';
 import SideBar from './SideBar';
 import FeaturedProducts from './FeaturedProducts';
@@ -12,19 +12,19 @@ import Footer from './Footer';
 
 function App() { //hi
   return (
-    <div className = "main-page-container">
-      <div className ="main-body-header">
+    <div className = "container">
+      <div className ="header">
         <Header/>
       </div>
-      <div className ="main-body-navbar">
-        <NavBar />
+      <div className ="navigation">
+        <Navigation />
       </div>
-     <div className = 'main-body-slideshow'>
+     <div className = 'slideshow'>
       <Slideshow />
      </div>
       
         
-          <div className = "main-page-side-bar">
+          <div className = "sidebar">
             <SideBar/>
           </div>
           <div className = "main-page-feature-products">
@@ -33,7 +33,9 @@ function App() { //hi
         
       
     
-    <Footer/>
+          <div className = "footer">
+            <Footer/>
+          </div>
 
         
 

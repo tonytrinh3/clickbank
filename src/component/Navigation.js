@@ -3,7 +3,7 @@ import React from 'react';
 
 import './css/NavBar.css';
 
-function NavBar(){
+function Navigation(){
   
   
     return (
@@ -22,7 +22,7 @@ function NavBar(){
   
 
 
-export default NavBar;
+export default Navigation;
 
 
 
