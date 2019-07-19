@@ -1,0 +1,28 @@
+.content{
+    padding: 0px 10px;
+}
+
+.sidebar {
+    grid-column: center-start / span 2;
+    background-color: $color-sidebar;
+    font-weight: 300;
+    color: $color-sidebar-text;
+    font-size: 16px;
+    line-height: 25px;
+
+}.sidebar__header{
+    margin: 10px 0;
+    font-weight: 300;
+    color: $color-sidebar-header;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+
+.sidebar__link{
+    border-bottom: 1px #818181 solid ;
+    display: block;
+    padding: 0 10px;
+    cursor: pointer;
+}

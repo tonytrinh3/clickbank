@@ -19,23 +19,22 @@ function App() { //hi
       <div className ="navigation">
         <Navigation />
       </div>
-     <div className = 'slideshow'>
+    
       <Slideshow />
-     </div>
+     
       
         
-          <div className = "sidebar">
+         
             <SideBar/>
-          </div>
-          <div className = "main-page-feature-products">
+          
+         
             <FeaturedProducts/>
-          </div>
-        
+          
       
     
-          <div className = "footer">
+         
             <Footer/>
-          </div>
+         
 
         
 

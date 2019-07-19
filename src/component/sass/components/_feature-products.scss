@@ -1,0 +1,30 @@
+.feature-products{
+    grid-column: col-start 3/center-end;
+    background-color: red;
+    
+}
+
+.product-image-container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 1em;
+}
+
+.product-image__img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+
+
+.feature-products-title {
+    color: #4E525B;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300; 
+    font-size: 46px;
+    line-height: 50px;
+}

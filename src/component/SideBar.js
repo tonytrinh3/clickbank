@@ -1,5 +1,6 @@
 import React from 'react';
-import './css/SideBar.css';
+
+import './sass/main.scss';
 import categoriesData from '../data/categoriesData';
 
 
@@ -30,32 +31,32 @@ class SideBar extends React.Component{
             // return subCategories
             return(
                 <div className = "content">
-                    <a className = 'side-bar-link'>Art</a>
-                    <a className = 'side-bar-link'>Body Art</a>
-                    <a className = 'side-bar-link'>Dance</a>
-                    <a className = 'side-bar-link'>Fashion</a>
-                    <a className = 'side-bar-link'>Film & Televsion</a>
-                    <a className = 'side-bar-link'>General</a>
-                    <a className = 'side-bar-link'>Magic Tricks</a>
-                    <a className = 'side-bar-link'>Music</a>
-                    <a className = 'side-bar-link'>Photography</a>
-                    <a className = 'side-bar-link'>Radio</a>
+                    <a className = 'sidebar__link'>Art</a>
+                    <a className = 'sidebar__link'>Body Art</a>
+                    <a className = 'sidebar__link'>Dance</a>
+                    <a className = 'sidebar__link'>Fashion</a>
+                    <a className = 'sidebar__link'>Film & Televsion</a>
+                    <a className = 'sidebar__link'>General</a>
+                    <a className = 'sidebar__link'>Magic Tricks</a>
+                    <a className = 'sidebar__link'>Music</a>
+                    <a className = 'sidebar__link'>Photography</a>
+                    <a className = 'sidebar__link'>Radio</a>
                 </div>
             )
           };
 
         return(
-            <div>
-                <header className = 'side-bar-header'>Categories</header>
+            <div className = 'sidebar'>
+                <header className = 'sidebar__header'>Categories</header>
     
-                <nav className = 'side-bar'>
-                        <a className = 'side-bar-link' onClick={this.handleClick}>Art & Entertainment</a>
+                <nav>
+                        <a className = 'sidebar__link' onClick={this.handleClick}>Art & Entertainment</a>
                         { !this.state.hideResults && <Results/> }
                           
-                        <a className = 'side-bar-link'>Business/Investing</a>
-                        <a className = 'side-bar-link'>Computers/Internet</a>
-                        <a className = 'side-bar-link'>E-Business & E-Marketing</a>
-                        <a className = 'side-bar-link'>Education</a>
+                        <a className = 'sidebar__link'>Business/Investing</a>
+                        <a className = 'sidebar__link'>Computers/Internet</a>
+                        <a className = 'sidebar__link'>E-Business & E-Marketing</a>
+                        <a className = 'sidebar__link'>Education</a>
                 </nav>
          
             </div>
